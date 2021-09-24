@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {SomeExampleService} from "../services/some-example.service";
+import {LocalCounterService} from "../services/local-counter.service";
 
 @Component({
   selector: 'sidemenu',
   templateUrl: './sidemenu.component.html',
-  styleUrls: ['./sidemenu.component.css']
+  styleUrls: ['./sidemenu.component.css'],
+  providers: [LocalCounterService]
 })
-export class SidemenuComponent implements OnInit {
+export class SidemenuComponent {
 
-  constructor() { }
+  constructor(public someExampleService: SomeExampleService,
+              public localCounterService: LocalCounterService) {
 
-  ngOnInit(): void {
   }
-
 }

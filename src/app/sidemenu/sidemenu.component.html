@@ -1,1 +1,9 @@
 <p>sidemenu works!</p>
+
+<div>Counter: {{ someExampleService.counter }}</div>
+<button (click)="someExampleService.increase()">+</button>
+<button (click)="someExampleService.decrease()">-</button>
+<br><br><hr><br><br>
+<div>Counter: {{ localCounterService.counter }}</div>
+<button (click)="localCounterService.increase()">+</button>
+<button (click)="localCounterService.decrease()">-</button>

@@ -1,3 +1,15 @@
 <div class="main-holder">
   <h1>111</h1>
+  <form [formGroup]="exampleForm" (ngSubmit)="submitForm()">
+    <h3>some form example</h3>
+    <div>
+      <label>inp1</label>
+      <input type="text" formControlName="input1" />
+    </div>
+    <div>
+      <label>inp2</label>
+      <input type="text" formControlName="input2" />
+    </div>
+    <button type="submit">submit</button>
+  </form>
 </div>
