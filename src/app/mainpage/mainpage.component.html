@@ -5,11 +5,33 @@
     <div>
       <label>inp1</label>
       <input type="text" formControlName="input1" />
+      <div
+        class="validation"
+        *ngIf="
+          exampleForm.controls.input1.invalid &&
+          exampleForm.controls.input1.touched
+        "
+      >
+        <small *ngIf="exampleForm.controls.input1.errors.acont"
+          >aCont </small
+        >
+        <small *ngIf="exampleForm.controls.input1.errors.required"
+          >required </small
+        >
+        <small *ngIf="exampleForm.controls.input1.errors.minlength"
+          >min length </small
+        >
+      </div>
     </div>
     <div>
       <label>inp2</label>
       <input type="text" formControlName="input2" />
     </div>
-    <button type="submit">submit</button>
+    <button type="submit" [disabled]="exampleForm.invalid">submit</button>
   </form>
+  <div>
+    <pre>{{ this.data | json }}</pre>
+  </div>
+  <hr>
+  <button (click)='download()'>Download</button>
 </div>
