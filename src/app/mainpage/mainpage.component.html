@@ -1,6 +1,6 @@
 <div class="main-holder">
-  <h1>111</h1>
-  <form [formGroup]="exampleForm" (ngSubmit)="submitForm()">
+  <h1>Mainpage</h1>
+  <!-- <form [formGroup]="exampleForm" (ngSubmit)="submitForm()">
     <h3>some form example</h3>
     <div>
       <label>inp1</label>
@@ -12,15 +12,13 @@
           exampleForm.controls.input1.touched
         "
       >
-        <small *ngIf="exampleForm.controls.input1.errors.acont"
-          >aCont </small
-        >
+        <small *ngIf="exampleForm.controls.input1.errors.acont">aCont </small>
         <small *ngIf="exampleForm.controls.input1.errors.required"
-          >required </small
-        >
+          >required
+        </small>
         <small *ngIf="exampleForm.controls.input1.errors.minlength"
-          >min length </small
-        >
+          >min length
+        </small>
       </div>
     </div>
     <div>
@@ -30,8 +28,8 @@
     <button type="submit" [disabled]="exampleForm.invalid">submit</button>
   </form>
   <div>
-    <pre>{{ this.data | json }}</pre>
+    <pre>{{ this.data }}</pre>
   </div>
-  <hr>
-  <button (click)='download()'>Download</button>
+  <hr />
+  <button (click)="download()">Download</button> -->
 </div>

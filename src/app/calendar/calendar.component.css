@@ -1,0 +1,32 @@
+.calendar-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline-wrapper {
+  display: flex;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-wrapper .row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.content-wrapper .day-item {
+  display: flex;
+  min-width: 160px;
+  height: 160px;
+}
+
+.debug div {
+  border: 1px dashed red
+}
