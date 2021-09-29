@@ -1,1 +1,9 @@
-<div class="day-tile-wrapper">{{ day }}</div>
+<div
+  class="day-tile-wrapper"
+  [ngClass]="{
+    nonCurrentMonth: dayData.isNonCurrentMonth === true,
+    today: dayData.isToday
+  }"
+>
+  {{ dayData.day }}.{{ dayData.month }}
+</div>

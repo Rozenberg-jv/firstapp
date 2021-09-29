@@ -23,8 +23,10 @@
 
 .content-wrapper .day-item {
   display: flex;
-  min-width: 160px;
-  height: 160px;
+  justify-content: center;
+  align-items: center;
+  min-width: 120px;
+  height: 120px;
 }
 
 .debug {
