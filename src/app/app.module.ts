@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { DayTileComponent } from './day-tile/day-tile.component';
 
 const appRoutes = [
   // { path: '', component: MainpageComponent },
@@ -23,6 +24,7 @@ const appRoutes = [
     DashboardComponent,
     SidemenuComponent,
     CalendarComponent,
+    DayTileComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,8 +2,8 @@
   "terminal.integrated.profiles.windows": {
     "Git Bash": {
       "source": "Git Bash",
-      "path": ["C:\\Java\\git\\git-bash.exe"]
+      "path": ["C:\\Program Files\\Git\\git-bash.exe"]
     }
   },
-  "terminal.integrated.cwd": "E:\\angular",
+  "terminal.integrated.cwd": "D:\\"
 }
